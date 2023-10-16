@@ -326,7 +326,6 @@ window.editPerson = (id) => {
     }).then((result) => {
         // show dữ liệu lên giao diện
         let person = result.data
-        console.log('person.role: ', person.role);
         if (person.role == 'ST') {
             // show lên UI
             document.getElementById('id').value = person.id;
@@ -370,7 +369,6 @@ window.editPerson = (id) => {
             document.getElementById('address').value = person.address;
             document.getElementById('EM').selected = true;
 
-            // document.getElementById('role').onchange;
             let html =
                 `
                 <div class="form-group">
